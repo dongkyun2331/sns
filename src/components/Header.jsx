@@ -10,6 +10,9 @@ export default function Header() {
             <img className="logo" src="./images/profile.png" alt="" />
           </Link>
         </li>
+        <li>
+          <Link to={"/"}>탐색하기</Link>
+        </li>
       </ul>
     </div>
   );

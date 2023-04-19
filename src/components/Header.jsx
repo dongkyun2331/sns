@@ -5,11 +5,11 @@ export default function Header() {
   return (
     <div className="header">
       <ul className="header-nav">
-        <Link to={"/"}>
-          <li>
+        <li>
+          <Link to={"/"}>
             <img className="logo" src="./images/profile.png" alt="" />
-          </li>
-        </Link>
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -6,8 +6,8 @@ export default function Header() {
     <div className="header">
       <ul className="header-nav">
         <Link to={"/"}>
-          <li className="logo">
-            <img src="./images/profile" alt="" />
+          <li>
+            <img className="logo" src="./images/profile.png" alt="" />
           </li>
         </Link>
       </ul>

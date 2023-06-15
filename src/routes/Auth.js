@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { authService } from "fbase";
+import { authService } from "../fbase";
 
 const Auth = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [newAcoount, setNewAccount] = useState(true);
+  const [newAccount, setNewAccount] = useState(true);
   const [error, setError] = useState("");
   const onChange = (event) => {
     const {
@@ -20,7 +20,7 @@ const Auth = () => {
     event.preventDefault();
     try {
       let data;
-      if (newAcoount) {
+      if (newAccount) {
         data = await authService.createUserWithEmailAndPassword(
           email,
           password
@@ -56,7 +56,7 @@ const Auth = () => {
         />
         <input
           type="submit"
-          value={newAcoount ? "Create Account" : "Sign In"}
+          value={newAccount ? "Create Account" : "Sign In"}
         />
         {error}
       </form>
